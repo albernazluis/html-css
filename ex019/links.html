@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        a:visited{
+            color: rgba(116, 27, 27, 0.61);
+        }
+
+        a:active{
+            color: greenyellow;
+        }
+
+        li::before{
+            content: '⇨ ';
+            color: rgb(0,255,0);
+        }
+
+        li::after{
+            content: ' ⇦';
+            color: rgb(0, 255, 0)
+        }
+
+        .especial{
+            background-color: blue;
+        }
+
+        a{
+            font-size: 1em;
+        }
+    </style>
+</head>rfdo
+<body>
+     <a href="https://github.com/azraells" target="_blank">
+        <li>Repositório github</li>
+     </a>
+     <br>       
+     <a href="https://www.youtube.com/channel/UCxQK1WY8XnvdbJzLsYAnwOQ" target="_blank">
+         <li class="esdpecial">Canal YT</li>
+     </a>
+     <br>
+     <a href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@71a958764ce040ddb6ea30553bdc7ed1/block-v1:HarvardX+CS50+X+type@vertical+block@d2c12b92116d4de5aad1bb53c7720e66" target="_blank">
+         <li>Site do CS50</li>
+     </a>
+</body>
+</html>

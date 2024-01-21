@@ -1,0 +1,15 @@
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+  @font-face {
+    font-family: 'Medieval Angel';
+    src: url(../fonts/Angel\ wish.otf) format(opentype), url(fonts/Angel\ wish.ttf) format(opentype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1{
+  text-align: center;
+  text-indent: 20px;
+}
