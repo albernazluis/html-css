@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(253, 232, 232);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header>h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+
+}
+
+header>p {
+    color: rgb(189, 189, 189);
+    padding-bottom: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 3vh;
+    line-height: 2em;
+    text-align: justify;
+}
+
+section>pre {
+    white-space: pre-line;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section>p {
+    background-color: #000000 !important;
+}
+
+.normal {}
+
+.imagem {
+    background-color: grey;
+    color: white;
+    box-shadow: 3px 3px 5px black;
+}
+
+#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#img2 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#img2>pre {
+    background-color: rgba(0, 0, 0, 0.301) !important;
+    max-width: 300px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+}
