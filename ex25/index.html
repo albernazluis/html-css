@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com colgroup</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nome {
+            background-color: rgb(0, 190, 253);
+        }
+
+        .idade {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="idade" span="2">
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luis</td>
+                <td>20</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>21</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>22</td>
+                <td>M</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
