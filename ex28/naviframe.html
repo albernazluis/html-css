@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando navegação em iFrames</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum inventore, sunt suscipit omnis pariatur culpa
+        assumenda eos earum a ipsam, labore minus distinctio natus harum explicabo dolorum nam, illum delectus!</p>
+    <ul>
+        <li> <a href="pagetest1.html" target="link">Primeira Página</a></li>
+        <li> <a href="pagetest2.html" target="link">Segunda Página</a></li>
+        <li> <a href="pagetest3.html" target="link">Terceira página</a></li>
+        <li> <a href="click.html" target="link">click</a></li>
+    </ul>
+
+    <iframe srcdoc="<h1>Esse é um teste</h1> <p>Utilizando srcdoc é possível adicionar um código html dentro do caminho para a página</p>" frameborder="1" name="link" width="800px" height="800px" sandbox="allow-scripts">
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+</body>
+
+</html>
