@@ -8,31 +8,42 @@
 </head>
 
 <body>
-    <form action="index.html" method="get" autocomplete="on">
-        <p>
-            <label for="iname">Nome</label>
-            <input type="text" name="Nome" id="inome" autocomplete="name" required minlength="7" maxlength="30"
-                placeholder="Nome completo">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 - 10" step="0.1">
-        </p>
-        <p>
-            <label for="ipletivo">Perído Letivo</label>
-            <input type="month" name="pletivo" id="ipletivo">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="date" name="Dia" id="idia">
-        </p>
-        <p>
-            <label for="ihora">Hora da prova</label>
-            <input type="time" name="horaprova" id="ihora">
-        </p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </form>
+    <fieldset>
+        <legend>Insira os dados</legend>
+        <form action="index.html" method="get" autocomplete="on">
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="Nome" id="inome" autocomplete="name" required minlength="7" maxlength="30"
+                    placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 - 10" step="0.1">
+            </p>
+            <p>
+                <label for="ipletivo">Perído Letivo</label>
+                <input type="month" name="pletivo" id="ipletivo">
+            </p>
+            <p>
+                <label for="idia">Dia da prova</label>
+                <input type="date" name="Dia" id="idia">
+            </p>
+            <p>
+                <label for="ihora">Hora da prova</label>
+                <input type="time" name="horaprova" id="ihora">
+            </p>
+            <p>
+                <label for="iemail">Email do aluno</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="telefone" id="itel" required autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
 </body>
 
 </html>
